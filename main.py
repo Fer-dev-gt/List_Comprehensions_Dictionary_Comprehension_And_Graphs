@@ -15,13 +15,14 @@ def run():
 
   charts.generate_pie_chart(countries, percentages)                                 # Generamos grafica de pastel con datos de "countries" y "percentages" usando el modulo "charts.generate_pie_chart"
   
-  """country = (input('Type Country => ')).capitalize()
-  result = utils.population_by_country(data, country)
+  """
+  country = (input('Type Country => ')).capitalize()
+  result = utils.population_by_country(data, country)         # Invocamos funcion para obtener pais ingresado
 
-if len(result) > 0:
-    country = result[0]
+  if len(result) > 0:                                         # Nos aseguramos que la lista no este vacia
+    country = result[0]                                       # Guardamos el nombre del pais de la lista
     labels, values = utils.get_population(country)
-    charts.generate_bar_chart(labels, values)
+    charts.generate_bar_chart(labels, values)                 # Generamos grafica
   
   #print(utils.A)                                             # Incluso si se trata de una variable, esta la podemos importar de la misma manera que con una funcion
   #print(result)"""
